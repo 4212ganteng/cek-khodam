@@ -2,9 +2,9 @@ import HomePage from "@/components/home";
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-center min-h-screen p-5 ">
+    <div className="flex justify-center items-center min-h-screen px-5 ">
       <div className="backdrop-blur-sm  bg-white/30 p-4 rounded-md">
-        <div className="my-3">
+        <div className="">
 
           <div className="text-center">
 
@@ -21,6 +21,7 @@ export default function Home() {
           <HomePage />
         </div>
       </div>
+
     </div>
 
 

@@ -15,7 +15,7 @@ export function CustomAccordion({ userName, name, description }: Khodam) {
 
         <Accordion className="my-10 overflow-y-auto">
             <Accordion.Panel>
-                <Accordion.Title>{userName} kamu memiliki khodam  {name}</Accordion.Title>
+                <Accordion.Title className="capitalize">{userName} kamu memiliki khodam  <span className="text-lg font-serif font-bold">{name}</span></Accordion.Title>
                 <Accordion.Content>
                     <p className="mb-2 text-gray-500 dark:text-gray-400 ">
                         khodam {description}
