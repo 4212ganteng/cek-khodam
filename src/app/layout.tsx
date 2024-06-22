@@ -16,7 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children}
+        <footer>
+          <div className="text-center  text-white block mb-3">
+            <a href="https://www.instagram.com/azizmuslim920/">Touchme <span className="text-blue-400">Aziz Muslim</span></a>
+          </div>
+        </footer>
+      </body>
+
     </html>
   );
 }

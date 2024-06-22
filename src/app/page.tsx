@@ -2,14 +2,28 @@ import HomePage from "@/components/home";
 
 export default function Home() {
   return (
-    <div className="max-h-screen max-w-md ">
+    <div className="flex justify-center items-center min-h-screen p-5 ">
+      <div className="backdrop-blur-sm  bg-white/30 p-4">
+        <div className="my-3">
 
-      <div className="mx-auto p-5 flex items-center justify-center">
+          <div className="text-center">
 
+            <h1 className="text-3xl mb-3 font-bold italic">
+              Cek Khodam
+            </h1>
 
-        <HomePage />
+            <h3 className="text-base mb-1">
+
+              Cek khodam yang ada di dalam diri kamu
+            </h3>
+          </div>
+
+          <HomePage />
+        </div>
       </div>
     </div>
+
+
 
   );
 }

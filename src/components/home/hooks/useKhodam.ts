@@ -5,17 +5,22 @@ import { Khodam } from '../type/khodam';
 export const useKhodam = () => {
   const [user, setUser] = useState<string>('');
   const [myKhodam, setMyKhodam] = useState<Khodam>({
-    name: 'Kosong',
+    name: '',
+    userName: '',
     description: '',
   });
 
-  console.log(user.length);
-  console.log(myKhodam);
   const handleSubmit = (e: any) => {
     e.preventDefault();
     if (user) {
-      const result = user.length % khodamData.length;
-      setMyKhodam(khodamData[result]);
+      const indexKhodam = user.length % khodamData.length;
+
+      setMyKhodam({
+        ...myKhodam,
+        userName: user,
+        name: khodamData[indexKhodam].name,
+        description: khodamData[indexKhodam].description,
+      });
     } else {
       return alert('Please input your name');
     }
